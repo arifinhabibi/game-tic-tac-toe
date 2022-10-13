@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 1080px;
+            height: 720px;
+            background-color: aquamarine;
+        }
+        .game {
+            display: flex;
+            justify-content: center;
+            margin-top: 15%;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .rect {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            border: 1px solid #000;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            user-select: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <div class="grid">
+                  <div class="rect"></div>
+                  <div class="rect"></div>
+                  <div class="rect"></div>
+                  <div class="rect"></div>
+                  <div class="rect"></div>
+                  <div class="rect"></div>
+                  <div class="rect"></div>
+                  <div class="rect"></div>
+                  <div class="rect"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./source/js/board.js"></script>
+</body>
+</html>
